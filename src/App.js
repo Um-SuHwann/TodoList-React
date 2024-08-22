@@ -44,7 +44,7 @@ const App = () => {
     nextId.current += 1; //nextId 1씩 더하기
   }, []);
   const onRemove = useCallback((id) => {
-    dispatch({ type: "Remove", id });
+    dispatch({ type: "REMOVE", id });
   }, []);
   const onToggle = useCallback((id) => dispatch({ type: "TOGGLE", id }), []);
   return (
